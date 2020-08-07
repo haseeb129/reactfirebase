@@ -18,6 +18,18 @@ const authReducer = (state = initState, action) => {
   } else if (action.type === "SIGNOUT_ERROR") {
     console.log(' "SIGNOUT_ERROR"');
     return state;
+  } else if (action.type === "SIGNUP_SUCCESS") {
+    console.log(' "SIGNUP_SUCCESS"');
+    return {
+      ...state,
+      authError: null,
+    };
+  } else if (action.type === "SIGNUP_FAIL") {
+    console.log("SIGNUP_FAIL");
+    return {
+      ...state,
+      authError: action.err,
+    };
   } else return state;
 };
 
