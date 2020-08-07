@@ -10,11 +10,9 @@ class SignIn extends Component {
     this.setState({
       [e.target.id]: e.target.value,
     });
-    console.log("Changing", e.target);
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
     this.props.signIn(this.state);
   };
   render() {

@@ -8,13 +8,11 @@ class CreateProject extends Component {
     this.setState({
       [e.target.id]: e.target.value,
     });
-    console.log("Changing", e.target);
   };
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.createProject(this.state);
-
-    //    this.props.createProject();
+    this.props.history.push("/");
   };
   render() {
     const { auth } = this.props;
