@@ -22,7 +22,9 @@ class SignUp extends Component {
           <div className="container">
             <form onSubmit={this.handleSubmit} className="white">
               <h5 className="grey-text text-darken-3">Sign IN</h5>
+
               <div className="input-field">
+                <i class="material-icons prefix">text_format</i>
                 <label htmlFor="firstName">First Name</label>
                 <input
                   type="text"
@@ -31,14 +33,18 @@ class SignUp extends Component {
                 />
               </div>
               <div className="input-field">
+                <i class="material-icons prefix">text_format</i>
+
                 <label htmlFor="lastName">Last Name</label>
                 <input type="text" id="lastName" onChange={this.handleChange} />
               </div>
               <div className="input-field">
+                <i class="material-icons prefix">account_circle</i>
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" onChange={this.handleChange} />
               </div>
               <div className="input-field">
+                <i class="material-icons prefix">fingerprint</i>
                 <label htmlFor="password">Password</label>
                 <input
                   type="password"
